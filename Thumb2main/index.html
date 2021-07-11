@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Thumb to main image</title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="main-container">
+            <div class="main-img">
+                <img src="images/1.webp">
+            </div>
+            <div class="thumbnail-container">
+                <div><img class="thumbnail" src="images/1.webp" onclick="nextImg('images/1.webp')"></div>
+                <div><img class="thumbnail" src="images/2.webp" onclick="nextImg('images/2.webp')"></div>
+                <div><img class="thumbnail" src="images/3.webp" onclick="nextImg('images/3.webp')"></div>
+            </div>
+        </div>
+        <script>
+            function nextImg(thumbnail){
+                document.querySelector('.main-img img').src = thumbnail;
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+.main-container {
+    max-width: 900px;
+}
+
+.main-img {
+    height: 600px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #aaa;
+}
+
+.main-img img{
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.thumbnail-container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.thumbnail-container > div {
+    padding: 5px;
+    border: 1px solid #aaa;
+}
+
+.thumbnail {
+    object-fit: cover;
+    width: 100%;
+}
